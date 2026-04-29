@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@400;700&display=swap');
+
+/* =======================================================
+   1. ESTILOS GLOBALES (Para toda la web)
+   ======================================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; /* Puesto a 0 para quitar bordes blancos */
+    padding: 0;
+    background-color: #f3f3e9; 
+    color: #000;
+}
+
+/* Clases de utilidad para colocar cosas (Float y Clear) */
+.clearfix {
+    display: flow-root;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* =======================================================
+   2. ENCABEZADO (HEADER)
+   ======================================================= */
+header {
+    background-color: #4a772f;
+    background-image: url(../img/imagen_decorativa.png); /* Tu imagen de fondo */
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 5px solid #adc4a4; 
+}
+
+/* Contenedor del Logo (flota a la derecha) */
+.logo-container {
+    float: right;
+    width: 15%;
+    margin-right: 5%;
+}
+
+/* Imagen del logo */
+#logo {
+    width: 100%; /* Ajustado al 100% del contenedor para que no baile */
+    height: auto; 
+    max-height: 150px;
+}
+
+/* Título y subtítulo (flotan a la izquierda) */
+.titulo-principal {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header h5 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    color: #adc4a4;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* =======================================================
+   3. MENÚ DE NAVEGACIÓN (NAV)
+   ======================================================= */
+nav {
+    background-color: #8bb174;
+    width: 100%;
+    text-align: center;
+    margin-top: -5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efectos al pasar el ratón por el menú */
+nav a:hover {
+    background-color: #4a772f;
+    border-radius: 5px;
+    border-bottom: 3px solid white;
+}
+
+/* Estilo para la página en la que estamos */
+nav a.active {
+    border-bottom: 3px solid white;
+}
+
+/* =======================================================
+   4. ESTRUCTURA PRINCIPAL (MAIN)
+   ======================================================= */
+main {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* =======================================================
+   5. ESTILOS PÁGINA INICIO (index.html)
+   ======================================================= */
+
+/* Sección Información Importante */
+.info-importante {
+    margin-bottom: 40px;
+    display: flow-root;
+    background-color: #f9f8f4; 
+}
+
+.caja-info {
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: transform 0.3s; /* Para tu animación */
+}
+
+/* Tu efecto de zoom y sombra */
+.caja-info:hover {
+    box-shadow: 0 10px 5px 0 black;
+    transform: scale(1.06);
+}
+
+.caja-info h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+.caja-info h3:hover {
+    border-bottom: 2px solid #ddd;
+}
+
+.caja-info a {
+    color: #4a772f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Sección Galería de Actividades */
+.actividades {
+    margin-top: 30px;
+    display: flow-root;
+    background-color: #e6e0d2; 
+}
+
+.galeria-item {
+    float: left;
+    width: 22%;
+    margin: 1.5%;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+/* Tu efecto de zoom y sombra en imágenes */
+.galeria-item:hover {
+    box-shadow: 0 10px 5px 0 black;
+    transform: scale(1.06);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.galeria-item p {
+    color: #4a772f;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* =======================================================
+   6. ESTILOS PÁGINA PROGRAMACIÓN (Tablas)
+   ======================================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    background-color: #8bb174;
+    color: #333;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    background-color: #8bb1746e; /* Efecto cebra */
+}
+
+/* Anchos de columnas */
+.colFecha { width: 13%; }
+.colHora { width: 17%; }
+.colTaller { width: 35%; }
+.colPonentes { width: 35%; }
+
+/* Clases para poner celdas en blanco */
+.col-blanca {
+    background-color: #fff !important;
+    text-align: center;
+}
+
+.col-ponente {
+    background-color: #fff !important;
+    text-align: left;
+}
+
+.horas { text-align: center; }
+
+.horas-blancas {
+    text-align: center;
+    background-color: #fff;
+}
+
+.taller-blanco {
+    background-color: #fff;
+}
+
+/* Estilos para la lista de ponentes */
+dl { margin: 0; }
+dt { font-weight: bold; color: #000; }
+dd { font-style: italic; color: #555; margin-left: 0; }
+
+
+/* =======================================================
+   7. ESTILOS PÁGINA INSCRIPCIÓN (Formulario)
+   ======================================================= */
+form {
+    background-color: #e6e0d2;
+}
+
+.form-seccion {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color: #e6e0d2;
+}
+
+.bg-suave {
+    background-color: #e6e0d2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.center-text {
+    text-align: center;
+    color: #4a772f;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Estilos de los inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Validación Verde (Correcto) */
+input:required:valid,
+select:required:valid,
+textarea:required:valid {
+    border: 2px solid #4CAF50;
+    outline: none;
+}
+
+/* Validación Roja (Incorrecto) */
+input:required:invalid,
+select:required:invalid,
+textarea:required:invalid {
+    border: 2px solid #FF6347;
+    outline: none;
+}
+
+/* Botón de enviar */
+.btn-enviar {
+    width: 100%;
+    background-color: #4a772f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #8bb174;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-legal {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* =======================================================
+   8. PIE DE PÁGINA (FOOTER)
+   ======================================================= */
+footer {
+    clear: both;
+    background-color: #4a772f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

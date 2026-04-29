@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación</title>
+    <link rel="stylesheet" href="./css/elementos.css">
+</head>
+
+<body>
+    <!-- En esta parte se ve la parte superior de la pagina web con el Nombre y Logo-->
+    <header class="clearfix">
+        <div class="logo-container">
+            <img src="./img/logo_hongo.png" alt="Logo Seta" id="logo">
+        </div>
+        <div class="titulo-principal">
+            <h1>II Jornadas de Micología</h1>
+            <h5>Soria, 10 y 11 de Noviembre de 2024</h5>
+        </div>
+    </header>
+
+    <!-- Esto es el navegador entre paginas web creado con una lista no numerada-->
+    <nav>
+        <ul>
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./programación.html" class="active">PROGRAMACIÓN</a></li>
+            <li><a href="./inscripción.html">REGISTRO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Corazón de la pagina donde aparece la tabla con la información de la programación-->
+    <main class="clearfix">
+        <h2 style="text-align: center; color: #4a772f;">PROGRAMA DE LAS II JORNADAS DE MICOLOGÍA</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="colFechas">Fecha</th>
+                    <th class="colHora">Hora</th>
+                    <th class="colTaller">Taller</th>
+                    <th class="colPonentes">Ponente</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="9" class="col-blanca">10/11/2024</td>
+                    <td class="horas-blancas">08:30 - 09:00</td>
+                    <td class="taller-blanco">Registro de participantes y bienvenida</td>
+                    <td rowspan="5" class="col-ponente">
+                        <dl>
+                            <dt>Carolina Méndez</dt>
+                            <dd>Ecóloga y exploradora, especializada en hongos como indicadores de salud ambiental.</dd>
+                        </dl>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="horas">09:00 - 09:30</td>
+                    <td>Introducción al seminario</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">09:30 - 10:30</td>
+                    <td class="taller-blanco">Fundamentos de la Micología</td>
+                </tr>
+                <tr>
+                    <td class="horas">10:30 - 10:45</td>
+                    <td>Pausa para café</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">10:45 - 12:15</td>
+                    <td class="taller-blanco">Diversidad de Hongos</td>
+                </tr>
+                <tr>
+                    <td class="horas">12:15 - 13:15</td>
+                    <td>Almuerzo</td>
+                    <td rowspan="4" class="col-ponente">
+                        <dl>
+                            <dt>Luis Álvarez</dt>
+                            <dd>Agricultor y emprendedor en producción sostenible de hongos comestibles.</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">13:15 - 14:15</td>
+                    <td class="taller-blanco">Hongos y sus Aplicaciones Prácticas</td>
+                </tr>
+                <tr>
+                    <td class="horas">14:15 - 14:30</td>
+                    <td >Pausa para café</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">14:30 - 16:00</td>
+                    <td class="taller-blanco">Taller práctico: Observación de hongos</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td rowspan="9" class="col-blanca">11/11/2024</td>
+                    <td class="horas">08:30 - 09:00</td>
+                    <td>Recepción y repaso del día anterior</td>
+                    <td rowspan="5" class="col-ponente">
+                        <dl>
+                            <dt>Dr. Elena Rojas</dt>
+                            <dd>Micóloga y profesora universitaria especializada en hongos medicinales.</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">09:00 - 10:30</td>
+                    <td class="taller-blanco">Micología Médica</td>
+                </tr>
+                <tr>
+                    <td class="horas">10:30 - 10:45</td>
+                    <td>Pausa para café</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">10:45 - 12:15</td>
+                    <td class="taller-blanco">Micología Ambiental</td>
+                </tr>
+                <tr>
+                    <td class="horas">12:15 - 13:15</td>
+                    <td>Almuerzo</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">13:15 - 14:15</td>
+                    <td class="taller-blanco">Avances en el estudio de hongos</td>
+                    <td rowspan="4" class="col-ponente">
+                        <dl>
+                            <dt>Dr. Ricardo Beltrán</dt>
+                            <dd>Biotecnólogo enfocado en el uso de hongos para crear materiales innovadores.</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="horas">14:15 - 14:30</td>
+                    <td>Pausa para café</td>
+                </tr>
+                <tr>
+                    <td class="horas-blancas">14:30 - 15:30</td>
+                    <td class="taller-blanco">Identificación de hongos comestibles</td>
+                </tr>
+                <tr>
+                    <td class="horas">15:30 - 16:00</td>
+                    <td>Cierre del seminario</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <!-- Pie de la pagina donde pone que esta hecha por mi y el curso en el que estoy actualmente-->
+    <footer>
+        <p>Actividad realizada por <strong>Alejandro Dolz</strong>, para la asignatura de Lenguajes de Marcas Curso
+            2025-2026</p>
+    </footer>
+</body>
+
+</html>

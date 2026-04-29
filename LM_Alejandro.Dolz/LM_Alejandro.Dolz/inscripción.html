@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="./css/elementos.css">
+</head>
+
+<body>
+    <!-- En esta parte se ve la parte superior de la pagina web con el Nombre y Logo-->
+    <header class="clearfix">
+        <div class="logo-container">
+            <img src="./img/logo_hongo.png" alt="Logo Seta" id="logo">
+        </div>
+        <div class="titulo-principal">
+            <h1>II Jornadas de Micología</h1>
+            <h5>Soria, 10 y 11 de Noviembre de 2024</h5>
+        </div>
+    </header>
+
+    <!-- Esto es el navegador entre paginas web creado con una lista no numerada-->
+    <nav>
+        <ul>
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./programación.html">PROGRAMACIÓN</a></li>
+            <li><a href="./inscripción.html" class="active">REGISTRO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Corazón de la página donde hay dos secciones donde la primera es un registro para saber quien eres y tus datos y otro donde te pregunta sobre los interes que tienes y la fecha de participación-->
+    <main class="clearfix">
+
+        <form action="#" method="post">
+            <h2 style="text-align: center; color: #4a772f;">Registro a las II Jornadas de Micología</h2>
+
+            <section class="form-seccion">
+                <h3 class="center-text">Datos personales</h3>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="12345678Z" required pattern="[0-9]{8}[A-Za-z]{1}"
+                    maxlength="9" title="8 números y una letra">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="10" maxlength="128">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" title="9 dígitos">
+            </section>
+
+            <section class="form-seccion bg-suave">
+                <h3 class="center-text">Intereses en las jornadas</h3>
+
+                <p>¿Qué talleres te interesan?*</p>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interes" value="diversidad"> Diversidad de hongos</label><br>
+                    <label><input type="checkbox" name="interes" value="aplicaciones"> Hongos y sus aplicaciones
+                        prácticas</label><br>
+                    <label><input type="checkbox" name="interes" value="taller"> Taller práctico: Observación de
+                        hongos</label><br>
+                    <label><input type="checkbox" name="interes" value="medica"> Micología médica</label><br>
+                    <label><input type="checkbox" name="interes" value="ambiental"> Micología ambiental</label><br>
+                    <label><input type="checkbox" name="interes" value="avances"> Avances en el estudio de
+                        hongos</label><br>
+                    <label><input type="checkbox" name="interes" value="identificacion"> Identificación de hongos
+                        comestibles y tóxicos</label>
+                </div>
+
+                <label for="motivo">Motivo de participación:*</label>
+                <textarea id="motivo" name="motivo" rows="5" required></textarea>
+
+                <label for="fecha">Fecha de asistencia:*</label>
+                <select id="fecha" name="fecha"  required>
+                    <option value="" disabled selected>Elige una fecha</option>
+                    <option value="10">10 de noviembre</option>
+                    <option value="11">11 de noviembre</option>
+                    <option value="ambos">Ambos días</option>
+                </select>
+
+                <div class="checkbox-legal">
+                    <label>
+                        <input type="checkbox" name="condiciones" required> He leído y acepto las condiciones de
+                        participación *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar registro</button>
+            </section>
+
+        </form>
+    </main>
+
+    <!-- Pie de la pagina donde pone que esta hecha por mi y el curso en el que estoy actualmente-->
+    <footer>
+        <p>Actividad realizada por <strong>Alejandro Dolz</strong>, para la asignatura de Lenguajes de Marcas Curso
+            2025-2026</p>
+    </footer>
+</body>
+
+</html>
