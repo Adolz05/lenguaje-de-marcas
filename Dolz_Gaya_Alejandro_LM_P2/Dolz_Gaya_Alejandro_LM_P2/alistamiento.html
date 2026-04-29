@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alistamiento</title>
+    <link rel="stylesheet" href="./css/alistamiento.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Archivo Rebelde</h1>
+        <nav>
+            <a href="./inedx.html" class="boton">Inicio</a>
+            <a href="./alistamiento.html" class="boton">Alistamiento</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        
+        <h2 class="titulo-pag">Alistamiento</h2>
+
+        <section class="caja-blanca">
+            <h2>Solicitud de ingreso</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    
+                    <p class="fila">
+                        <label for="alias">Alias *</label>
+                        <input type="text" id="alias" name="alias" required pattern="[a-zA-Z0-9]+">
+                    </p>
+
+                    <p class="fila">
+                        <label for="codigo">Código de identificación *</label>
+                        <input type="text" id="codigo" name="codigo" placeholder="XX-00" required pattern="[A-Z]{2}-[0-9]{2}">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    
+                    <p class="fila">
+                        <label for="bando">Bando</label>
+                        <select id="bando" name="bando">
+                            <option value="imperio">Imperio</option>
+                            <option value="rebelion">Rebelión</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <button type="submit" class="boton-enviar">Enviar solicitud</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="caja-blanca">
+            <h2>Códigos de autorización</h2>
+            
+            <table class="tabla">
+                <caption>Autorizaciones de acceso</caption>
+                
+                <thead>
+                    <tr>
+                        <th colspan="2" class="centrado">Identificación</th>
+                        <th colspan="2" class="centrado">Acceso</th>
+                    </tr>
+                    <tr>
+                        <th>Rango</th>
+                        <th>Código</th>
+                        <th>Zona</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Cadete</td>
+                        <td>C-102</td>
+                        <td>Hangar</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="v-middle">Piloto</td>
+                        <td rowspan="2" class="v-middle">P-777</td>
+                        <td>Hangar</td>
+                        <td>En revisión</td>
+                    </tr>
+                    <tr>
+                        <td>Taller</td>
+                        <td>Activo</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <strong>Total registros: 3 rangos — Última actualización: 2026</strong>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        Alejandro Dolz — 2026
+    </footer>
+
+</body>
+</html>

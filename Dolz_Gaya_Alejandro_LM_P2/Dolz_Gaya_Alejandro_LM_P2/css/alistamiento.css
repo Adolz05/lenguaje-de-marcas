@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF7ED;
+    color: #3F2D1F;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.cabecera {
+    background-color: #A16207;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #E7D4BF;
+    margin-bottom: 20px;
+}
+
+.cabecera h1 {
+    margin: 0 0 15px 0;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #F97316;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caja-blanca {
+    background-color: #FFFFFF;
+    border: 1px solid #E7D4BF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+h2 {
+    color: #A16207;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.titulo-pag {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #E7D4BF;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #A16207;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.fila {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.fila label {
+    float: left;
+    width: 30%;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.fila input,
+.fila select {
+    float: right;
+    width: 68%;
+    padding: 8px;
+    border: 1px solid #E7D4BF;
+    border-radius: 4px;
+}
+
+.boton-enviar {
+    background-color: #F97316;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #E7D4BF;
+    margin-top: 10px;
+}
+
+.tabla caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid #E7D4BF;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla thead th {
+    background-color: #FFF7ED;
+}
+
+.tabla .centrado {
+    text-align: center;
+}
+
+.tabla .v-middle {
+    vertical-align: middle;
+}
+
+.tabla tfoot td {
+    border-top: 2px solid #E7D4BF;
+    padding-top: 15px;
+}
+
+.pie {
+    background-color: #A16207;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    clear: both;
+}
